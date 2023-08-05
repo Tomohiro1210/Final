@@ -5,8 +5,8 @@ CREATE TABLE users (
   name VARCHAR(100) NOT NULL,
   password VARCHAR(20) NOT NULL,
   mail VARCHAR(50) NOT NULL,
-  registrationdate DATE NOT NULL,
+  registrationDate DATE NOT NULL,
   PRIMARY KEY(id)
 );
 
-INSERT INTO users (name, password, mail, registrationdate) VALUES ("Inoue", "Pass1", "aabbcc@example.com", "2023/07/23");
+INSERT INTO users (name, password, mail, registrationDate) VALUES ("Inoue", "Pass1", "aabbcc@example.com", "2023/07/23");

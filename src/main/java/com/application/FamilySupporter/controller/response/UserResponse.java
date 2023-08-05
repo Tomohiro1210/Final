@@ -1,10 +1,17 @@
 package com.application.FamilySupporter.controller.response;
 
 import com.application.FamilySupporter.entity.User;
+import lombok.Getter;
+import lombok.Setter;
 
 public class UserResponse {
 
+    @Getter
+    @Setter
     private int id;
+
+    @Getter
+    @Setter
     private String name;
 
     public UserResponse(User user) {
@@ -12,19 +19,4 @@ public class UserResponse {
         this.name = user.getName();
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
